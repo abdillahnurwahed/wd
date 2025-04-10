@@ -61,7 +61,6 @@ export default function EditPost({ post }: Props) {
     
         // Submit the form with the FormData
         submitForm(`/dashboard/post/${post.id}`, {
-            data: formData,
             forceFormData: true, // Pastikan Inertia.js menggunakan FormData
         });
     };
