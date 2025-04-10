@@ -1,7 +1,6 @@
 import React from 'react';
 import { Head, Link } from '@inertiajs/react';
 import { motion } from 'framer-motion';
-import { BreadcrumbItem } from '@/types';
 // import AppLayout from '@/Layouts/AppLayout';
 
 // Import Layout sesuai dengan struktur proyek Anda
@@ -26,20 +25,6 @@ interface Props {
 }
 
 export default function Show({ post }: Props) {
-    const breadcrumbs: BreadcrumbItem[] = [
-        {
-            title: 'Home',
-            href: '/',
-        },
-        {
-            title: 'Projects',
-            href: '/',
-        },
-        {
-            title: post.title,
-            href: `/post/${post.id}`,
-        },
-    ];
 
     return (
         // Jika ada masalah dengan AppLayout, Anda dapat menggunakan fragment sementara
